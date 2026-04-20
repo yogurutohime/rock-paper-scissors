@@ -21,4 +21,29 @@ let getHumanChoice = () => window.prompt()
 let humanScore= 0;
 let computerScore = 0;
 
-
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanCHoice.toLowerCase();
+    computerChoice = computerChoice.toLowerCase();
+    
+    if (humanChoice === computerChoice) {
+        console.log("Tie!")
+    }else if (humanChoice === scissors) {
+        if (computerChoice === rock) {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+        }else {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+        }
+    }else if (humanChoice === rock) {
+        if (computerChoice === paper) {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+        }else {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+        }
+    }else if (humanChoice === paper) {
+        if (computerChoice === scissors) {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
+        }else {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+        }
+    }
+}
