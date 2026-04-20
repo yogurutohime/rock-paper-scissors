@@ -18,4 +18,7 @@ let getComputerChoice = function() {
 
 let getHumanChoice = () => window.prompt()
 
+let humanScore= 0;
+let computerScore = 0;
+
 
