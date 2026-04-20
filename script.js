@@ -16,3 +16,6 @@ let getComputerChoice = function() {
     }
 };
 
+let getHumanChoice = () => window.prompt()
+
+
